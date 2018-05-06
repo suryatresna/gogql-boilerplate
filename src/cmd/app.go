@@ -2,14 +2,11 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
+	"github.com/suryatresna/gogql-boilerplate/src/handler"
 )
 
 func main() {
 	r := gin.Default()
-	r.GET("/ping", func(c *gin.Context) {
-		c.JSON(200, gin.H{
-			"message": "pong pong pong",
-		})
-	})
+	r.GET("/ping", handler.PingHandler)
 	r.Run() // listen and serve on 0.0.0.0:8080
 }

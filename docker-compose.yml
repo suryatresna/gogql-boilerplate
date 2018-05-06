@@ -14,8 +14,8 @@ services:
       APP_REDIS: app.redis.local
       APP_NAME: gogql
       PATH_PROJECT: github.com/suryatresna/gogql-boilerplate
-    command: ['make','run']
-    container_name: app.lite.local
+    command: ['make','run-dev']
+    container_name: app.go.local
 
   redis:
     image: redis:latest

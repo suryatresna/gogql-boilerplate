@@ -11,14 +11,14 @@ services:
     depends_on:
       - redis
     environment:
-      APP_REDIS: app.redis.local
+      APP_REDIS: gogql.redis.local
       APP_NAME: gogql
       PATH_PROJECT: github.com/suryatresna/gogql-boilerplate
     command: ['make','run-dev']
-    container_name: app.go.local
+    container_name: gogql.app.local
 
   redis:
     image: redis:latest
     ports:
       - 6379:6379
-    container_name: app.redis.local
+    container_name: gogql.redis.local

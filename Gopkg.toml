@@ -32,7 +32,3 @@
 [[constraint]]
   name = "github.com/gin-gonic/gin"
   version = "1.2.0"
-
-[[constraint]]
-  name = "github.com/graphql-go/graphql"
-  version = "0.7.5"

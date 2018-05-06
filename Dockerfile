@@ -7,7 +7,7 @@ ENV APP_ENV develop
 
 RUN curl -fsSL -o /usr/local/bin/dep https://github.com/golang/dep/releases/download/v0.4.1/dep-linux-amd64 &&\
     chmod +x /usr/local/bin/dep &&\
-    curl https://glide.sh/get | sh && go get github.com/pilu/fresh
+    go get github.com/pilu/fresh
     
 
 RUN mkdir -p /go/src/${PATH_PROJECT}

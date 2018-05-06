@@ -16,4 +16,4 @@ start:
 
 start-dev:
 	@echo " >> starting binaries develop"
-	@fresh src/cmd/app.go
+	@fresh -c runner.conf app.go
